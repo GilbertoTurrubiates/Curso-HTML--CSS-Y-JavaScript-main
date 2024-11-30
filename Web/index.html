@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <h2 id="projects-title">Projects</h2>
+    <!-- Cambié la lista desordenada por una lista ordenada -->
+    <ol id="project-list">
+      <li class="project-item">Drafts</li>
+      <li class="project-item">Shared With Me</li>
+    </ol>
+    <button id="new-draft-btn" class="btn">New Draft</button>
+    <button id="new-project-btn" class="btn">New Project</button>
+  </aside>
+
+  <div class="main" id="main-content">
+    <header id="main-header">
+      <h1 id="dashboard-title">Side Hustle</h1>
+    </header>
+
+    <div class="board" id="task-board">
+      <div class="column" id="ideas-column">
+        <h3 class="column-title"><span class="dot blue"></span>Ideas</h3>
+        <div class="note" id="idea-note-1">
+          <p><strong>Design Moodboard:</strong> Create a visual inspiration board for the product's look and feel.</p>
+          <img src="../Web/assets/icons/user/link.svg" alt="Link icon">
+        </div>
+        <button class="add-note-btn">Add Note</button>
+      </div>
+
+      <div class="column" id="features-column">
+        <h3 class="column-title"><span class="dot yellow"></span>Features / Work in Progress</h3>
+        <div class="note" id="feature-note-1">
+          <p><strong>API Design:</strong> Define endpoints and structure for seamless integration.</p>
+        </div>
+        <div class="note" id="feature-note-2">
+          <p><strong>Hi-Fi Prototypes:</strong> Finalize interactive prototypes for user testing.</p>
+        </div>
+        <div class="note" id="feature-note-3">
+          <p><strong>Edge Case Designs:</strong> Address all potential user scenarios in the interface.</p>
+        </div>
+        <button class="add-note-btn">Add Note</button>
+      </div>
+
+      <div class="column" id="done-column">
+        <h3 class="column-title"><span class="dot green"></span>Done</h3>
+        <div class="note" id="done-note-1">
+          <p><strong>Information Architecture:</strong> Organize content structure for usability.</p>
+        </div>
+        <div class="note" id="done-note-2">
+          <p><strong>Code Convention:</strong> Establish consistent coding standards for the team.</p>
+        </div>
+        <div class="note" id="done-note-3">
+          <p><strong>Wireframes:</strong> Finalize low-fidelity designs for the main features.</p>
+        </div>
+        <button class="add-note-btn">Add Note</button>
+      </div>
+
+      <div class="column" id="goals-column">
+        <h3 class="column-title"><span class="dot black"></span>Goals</h3>
+        <div class="note" id="goal-note-1">
+          <p><strong>MVP:</strong> Complete the minimum viable product for initial release.</p>
+        </div>
+        <div class="note" id="goal-note-2">
+          <p><strong>Launch Plans:</strong> Develop a marketing and rollout strategy for the product.</p>
+        </div>
+        <button class="add-note-btn">Add Note</button>
+      </div>
+    </div>
+
+    <!-- Nueva sección añadida -->
+    <section class="info" id="about-section">
+      <h2 id="about-title">About the Dashboard</h2>
+      <p id="about-description">This dashboard helps teams manage projects effectively by organizing tasks into columns such as Ideas, Work in Progress, and Goals.</p>
+    </section>
+
+  </div>
+</body>
+</html>
